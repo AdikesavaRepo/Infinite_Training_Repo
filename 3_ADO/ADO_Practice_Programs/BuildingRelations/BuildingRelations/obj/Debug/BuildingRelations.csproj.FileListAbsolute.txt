@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\bin\Debug\BuildingRelations.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\BuildingRelations\BuildingRelations\obj\Debug\BuildingRelations.pdb

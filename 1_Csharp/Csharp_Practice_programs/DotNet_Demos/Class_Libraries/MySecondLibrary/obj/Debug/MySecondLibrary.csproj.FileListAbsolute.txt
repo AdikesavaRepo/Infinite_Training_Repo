@@ -1,0 +1,9 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\bin\Debug\MySecondLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\bin\Debug\MySecondLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\bin\Debug\MyFirstLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\bin\Debug\MyFirstLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\obj\Debug\MySecondLibrary.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\obj\Debug\MySecondLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\obj\Debug\MySecondLibrary.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\obj\Debug\MySecondLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MySecondLibrary\obj\Debug\MySecondLibrary.pdb

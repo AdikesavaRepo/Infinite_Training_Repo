@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\bin\Debug\Files_Demos.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\bin\Debug\Files_Demos.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\bin\Debug\Files_Demos.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\obj\Debug\Files_Demos.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\obj\Debug\Files_Demos.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\obj\Debug\Files_Demos.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\Files_Demos\Files_Demos\obj\Debug\Files_Demos.pdb

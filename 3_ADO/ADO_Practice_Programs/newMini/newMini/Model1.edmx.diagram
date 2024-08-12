@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1b29e8ae965b4ce88794ad9dffe88fae" Name="Diagram1">
+        <EntityTypeShape EntityType="MiniProjectPracticeModel.tblBooking" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MiniProjectPracticeModel.tblCancellation" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MiniProjectPracticeModel.tblClassDetail" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MiniProjectPracticeModel.tblTrain" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="MiniProjectPracticeModel.FK__tblBookin__Statu__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="MiniProjectPracticeModel.FK__tblCancel__Booki__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="MiniProjectPracticeModel.FK__tblCancel__Train__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="MiniProjectPracticeModel.FK__tblClassDe__Fare__3A81B327" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

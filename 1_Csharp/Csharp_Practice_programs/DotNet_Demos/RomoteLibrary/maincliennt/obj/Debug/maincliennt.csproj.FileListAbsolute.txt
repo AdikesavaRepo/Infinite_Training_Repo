@@ -1,0 +1,10 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\bin\Debug\maincliennt.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\bin\Debug\maincliennt.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\bin\Debug\maincliennt.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\bin\Debug\RomoteLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\bin\Debug\RomoteLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\obj\Debug\maincliennt.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\obj\Debug\maincliennt.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\obj\Debug\maincliennt.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\obj\Debug\maincliennt.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\maincliennt\obj\Debug\maincliennt.pdb

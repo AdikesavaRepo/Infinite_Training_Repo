@@ -1,0 +1,146 @@
+what changes should be done in below c# code public static void BookingTicket()
+        {
+            try
+            {
+                Console.Write("Enter Train Number: ");
+                int Train_No = Convert.ToInt32(Console.ReadLine());
+
+                // Check if the train is active before proceeding with the booking
+                var train = db.tblTrains.FirstOrDefault(t => t.Train_No == Train_No && t.Status == "Active");
+                if (train == null)
+                {
+                    Console.WriteLine("Sorry! This train is not running at this time");
+                    return;
+                }
+
+                Console.Write("Enter Passenger Name: ");
+                string Passenger_Name = Console.ReadLine();
+
+                Console.Write("Enter Class Name: ");
+                string Class_Name = Console.ReadLine();
+
+                Console.Write("Enter Date of Travel (YYYY-MM-DD): ");
+                DateTime Travel_Date = Convert.ToDateTime(Console.ReadLine());
+
+                Console.Write("Enter Number of Tickets: ");
+                int Tickets_Count = Convert.ToInt32(Console.ReadLine());
+
+            
+
+
+            db.BookTrain_Ticket(Train_No, Passenger_Name, Class_Name, Travel_Date, Tickets_Count);
+            db.SaveChanges();
+
+            
+
+                // Retrieve the booking ID after successful booking
+                var booking = db.tblBookings.OrderByDescending(b => b.Booking_ID).FirstOrDefault();
+                if (booking != null)
+                {
+                    Console.WriteLine("Ticket Booked Successfully! Your Booking ID is: " + booking.Booking_ID);
+                }
+                else
+                {
+                    Console.WriteLine("Ticket Booked Successfully!");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        } for the stored procedure CREATE OR ALTER PROCEDURE BookTrain_Ticket
+    @Train_No INT,
+    @Passenger_Name VARCHAR(50),
+    @Class_Name VARCHAR(50),
+    @Travel_Date DATETIME,
+    @Tickets_Count INT
+AS
+BEGIN
+    -- Start a transaction to ensure atomicity
+    BEGIN TRANSACTION;
+
+    DECLARE @Ticket_Fare DECIMAL(10, 2);
+    DECLARE @Total_Amount DECIMAL(10, 2);
+    DECLARE @Available_Seats INT;
+    DECLARE @ClassExists BIT;
+    DECLARE @TrainExists BIT;
+    DECLARE @CurrentDate DATETIME = GETDATE();
+
+    -- Validate the number of tickets
+    IF @Tickets_Count <= 0 OR @Tickets_Count > 3
+    BEGIN
+        PRINT 'Invalid number of tickets. You can only book up to 3 tickets at a time.';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Check if the class exists
+    SELECT @ClassExists = CASE WHEN EXISTS (
+        SELECT 1 
+        FROM tblClassDetails 
+        WHERE Train_No = @Train_No AND Class_Name = @Class_Name
+    ) THEN 1 ELSE 0 END;
+
+    IF @ClassExists = 0
+    BEGIN
+        PRINT 'Class does not exist';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Check if the train exists
+    SELECT @TrainExists = CASE WHEN EXISTS (
+        SELECT 1 
+        FROM tblTrains 
+        WHERE Train_No = @Train_No
+    ) THEN 1 ELSE 0 END;
+
+    IF @TrainExists = 0
+    BEGIN
+        PRINT 'Train does not exist';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Retrieve the ticket fare
+    SELECT @Ticket_Fare = Fare 
+    FROM tblClassDetails
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    -- Calculate total amount
+    SET @Total_Amount = @Ticket_Fare * @Tickets_Count;
+
+    -- Check available seats
+    SELECT @Available_Seats = Available_Seats 
+    FROM tblClassDetails
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    IF @Available_Seats < @Tickets_Count
+    BEGIN
+        PRINT 'Not enough seats available';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Only allow booking for future travel dates
+    IF @Travel_Date <= @CurrentDate
+    BEGIN
+        PRINT 'Travel date must be in the future';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Update available seats
+    UPDATE tblClassDetails
+    SET Available_Seats = Available_Seats - @Tickets_Count
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    -- Insert booking details
+    INSERT INTO tblBookings (Train_No, Passenger_Name, Class_Name, Travel_Date, Tickets_Count, Total_Amount, Status)
+    VALUES (@Train_No, @Passenger_Name, @Class_Name, @Travel_Date, @Tickets_Count, @Total_Amount, 'Active');
+
+    -- Commit the transaction
+    COMMIT TRANSACTION;
+
+    PRINT 'Booking successfully completed.';
+END

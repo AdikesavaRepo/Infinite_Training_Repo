@@ -1,0 +1,4 @@
+Hello there
+i am new to creating files in c
+I'm training in dotnet
+this is cc4

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RailwayReservation_Booking_SystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblBooking">
+    <Key>
+      <PropertyRef Name="Booking_ID" />
+    </Key>
+    <Property Name="Booking_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Passenger_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Train_No" Type="Int32" Nullable="false" />
+    <Property Name="Class_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Travel_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tickets_Count" Type="Int32" Nullable="false" />
+    <Property Name="Total_Amount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblTrain" Relationship="Self.FK__tblBookin__Statu__3F466844" FromRole="tblBookings" ToRole="tblTrains" />
+    <NavigationProperty Name="tblCancellations" Relationship="Self.FK__tblCancel__Booki__4316F928" FromRole="tblBookings" ToRole="tblCancellation" />
+  </EntityType>
+  <EntityType Name="tblCancellation">
+    <Key>
+      <PropertyRef Name="Cancellation_ID" />
+    </Key>
+    <Property Name="Cancellation_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Booking_ID" Type="Int32" />
+    <Property Name="Passenger_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Train_No" Type="Int32" />
+    <Property Name="Class_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Tickets_Count" Type="Int32" />
+    <Property Name="DateOf_Cancel" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblBooking" Relationship="Self.FK__tblCancel__Booki__4316F928" FromRole="tblCancellation" ToRole="tblBookings" />
+    <NavigationProperty Name="tblTrain" Relationship="Self.FK__tblCancel__Train__440B1D61" FromRole="tblCancellation" ToRole="tblTrains" />
+  </EntityType>
+  <EntityType Name="tblClassDetail">
+    <Key>
+      <PropertyRef Name="Class_ID" />
+    </Key>
+    <Property Name="Class_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Train_No" Type="Int32" />
+    <Property Name="Class_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total_Seats" Type="Int32" Nullable="false" />
+    <Property Name="Available_Seats" Type="Int32" Nullable="false" />
+    <Property Name="Fare" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="tblTrain" Relationship="Self.FK__tblClassDe__Fare__3A81B327" FromRole="tblClassDetails" ToRole="tblTrains" />
+  </EntityType>
+  <EntityType Name="tblTrain">
+    <Key>
+      <PropertyRef Name="Train_No" />
+    </Key>
+    <Property Name="Train_No" Type="Int32" Nullable="false" />
+    <Property Name="Train_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Source_Station" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Destination_Station" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblBookings" Relationship="Self.FK__tblBookin__Statu__3F466844" FromRole="tblTrains" ToRole="tblBookings" />
+    <NavigationProperty Name="tblCancellations" Relationship="Self.FK__tblCancel__Train__440B1D61" FromRole="tblTrains" ToRole="tblCancellation" />
+    <NavigationProperty Name="tblClassDetails" Relationship="Self.FK__tblClassDe__Fare__3A81B327" FromRole="tblTrains" ToRole="tblClassDetails" />
+  </EntityType>
+  <Association Name="FK__tblBookin__Statu__3F466844">
+    <End Role="tblTrains" Type="Self.tblTrain" Multiplicity="1" />
+    <End Role="tblBookings" Type="Self.tblBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTrains">
+        <PropertyRef Name="Train_No" />
+      </Principal>
+      <Dependent Role="tblBookings">
+        <PropertyRef Name="Train_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblCancel__Booki__4316F928">
+    <End Role="tblBookings" Type="Self.tblBooking" Multiplicity="0..1" />
+    <End Role="tblCancellation" Type="Self.tblCancellation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBookings">
+        <PropertyRef Name="Booking_ID" />
+      </Principal>
+      <Dependent Role="tblCancellation">
+        <PropertyRef Name="Booking_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblCancel__Train__440B1D61">
+    <End Role="tblTrains" Type="Self.tblTrain" Multiplicity="0..1" />
+    <End Role="tblCancellation" Type="Self.tblCancellation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTrains">
+        <PropertyRef Name="Train_No" />
+      </Principal>
+      <Dependent Role="tblCancellation">
+        <PropertyRef Name="Train_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblClassDe__Fare__3A81B327">
+    <End Role="tblTrains" Type="Self.tblTrain" Multiplicity="0..1" />
+    <End Role="tblClassDetails" Type="Self.tblClassDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTrains">
+        <PropertyRef Name="Train_No" />
+      </Principal>
+      <Dependent Role="tblClassDetails">
+        <PropertyRef Name="Train_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RailwayReservation_Booking_SystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBookings" EntityType="Self.tblBooking" />
+    <EntitySet Name="tblCancellations" EntityType="Self.tblCancellation" />
+    <EntitySet Name="tblClassDetails" EntityType="Self.tblClassDetail" />
+    <EntitySet Name="tblTrains" EntityType="Self.tblTrain" />
+    <AssociationSet Name="FK__tblBookin__Statu__3F466844" Association="Self.FK__tblBookin__Statu__3F466844">
+      <End Role="tblTrains" EntitySet="tblTrains" />
+      <End Role="tblBookings" EntitySet="tblBookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblCancel__Booki__4316F928" Association="Self.FK__tblCancel__Booki__4316F928">
+      <End Role="tblBookings" EntitySet="tblBookings" />
+      <End Role="tblCancellation" EntitySet="tblCancellations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblCancel__Train__440B1D61" Association="Self.FK__tblCancel__Train__440B1D61">
+      <End Role="tblTrains" EntitySet="tblTrains" />
+      <End Role="tblCancellation" EntitySet="tblCancellations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblClassDe__Fare__3A81B327" Association="Self.FK__tblClassDe__Fare__3A81B327">
+      <End Role="tblTrains" EntitySet="tblTrains" />
+      <End Role="tblClassDetails" EntitySet="tblClassDetails" />
+    </AssociationSet>
+    <FunctionImport Name="sp_AddClass_Detail">
+      <Parameter Name="Train_No" Mode="In" Type="Int32" />
+      <Parameter Name="Class_Name" Mode="In" Type="String" />
+      <Parameter Name="Total_Seats" Mode="In" Type="Int32" />
+      <Parameter Name="Available_Seats" Mode="In" Type="Int32" />
+      <Parameter Name="Fare" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddTrain">
+      <Parameter Name="Train_No" Mode="In" Type="Int32" />
+      <Parameter Name="Train_Name" Mode="In" Type="String" />
+      <Parameter Name="Source_Station" Mode="In" Type="String" />
+      <Parameter Name="Destination_Station" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_BookingTrain_Ticket">
+      <Parameter Name="Train_No" Mode="In" Type="Int32" />
+      <Parameter Name="Passenger_Name" Mode="In" Type="String" />
+      <Parameter Name="Class_Name" Mode="In" Type="String" />
+      <Parameter Name="Travel_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Tickets_Count" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Cancel_Ticket">
+      <Parameter Name="Booking_ID" Mode="In" Type="Int32" />
+      <Parameter Name="Passenger_Name" Mode="In" Type="String" />
+      <Parameter Name="Train_No" Mode="In" Type="Int32" />
+      <Parameter Name="Class_Name" Mode="In" Type="String" />
+      <Parameter Name="Tickets_Count" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Display_Class" ReturnType="Collection(RailwayReservation_Booking_SystemModel.sp_Display_Class_Result)" />
+    <FunctionImport Name="sp_Display_Train" ReturnType="Collection(RailwayReservation_Booking_SystemModel.sp_Display_Train_Result)" />
+    <FunctionImport Name="sp_GetAvailableTrains" ReturnType="Collection(RailwayReservation_Booking_SystemModel.sp_GetAvailableTrains_Result)">
+      <Parameter Name="SourceStation" Mode="In" Type="String" />
+      <Parameter Name="DestinationStation" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_TrainStatus" ReturnType="Collection(String)">
+      <Parameter Name="Train_No" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_Display_Class_Result">
+    <Property Type="Int32" Name="Class_ID" Nullable="false" />
+    <Property Type="Int32" Name="Train_No" Nullable="true" />
+    <Property Type="String" Name="Class_Name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Total_Seats" Nullable="false" />
+    <Property Type="Int32" Name="Available_Seats" Nullable="false" />
+    <Property Type="Decimal" Name="Fare" Nullable="true" Precision="10" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_Display_Train_Result">
+    <Property Type="Int32" Name="Train_No" Nullable="false" />
+    <Property Type="String" Name="Train_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Source_Station" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Destination_Station" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_GetAvailableTrains_Result">
+    <Property Type="Int32" Name="Train_No" Nullable="false" />
+    <Property Type="String" Name="Train_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Source_Station" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Destination_Station" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="20" />
+  </ComplexType>
+</Schema>

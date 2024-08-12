@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: RomoteLibrary, Configuration: Debug Any CPU ------
+1>  RomoteLibrary -> C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\bin\Debug\RomoteLibrary.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

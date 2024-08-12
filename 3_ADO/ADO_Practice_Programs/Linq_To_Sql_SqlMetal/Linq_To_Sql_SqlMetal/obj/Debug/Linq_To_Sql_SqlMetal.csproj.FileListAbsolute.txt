@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\bin\Debug\Linq_To_Sql_SqlMetal.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_Sql_SqlMetal\Linq_To_Sql_SqlMetal\obj\Debug\Linq_To_Sql_SqlMetal.pdb

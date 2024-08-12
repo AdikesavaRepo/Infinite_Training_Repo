@@ -1,0 +1,30 @@
+SQL SERVER TOOLS:
+
+SERVER TOOLS
+	SQL Server Management
+	SQL Server Agent
+	Server Network Utility
+CLIENT TOOLS
+	SQL Enterprise Manager
+	SQL Query Analyzer
+	Client Network Utility
+
+Server Tools:
+
+SQL Server Management Studio (SSMS): This is the primary integrated environment for managing SQL Server, including database administration, querying, and configuration.
+
+SQL Server Agent: This is a component of SQL Server that allows for the automation of tasks, such as database backups, maintenance plans, and job scheduling.
+
+Server Network Utility: This utility helps configure network protocols and connectivity settings for SQL Server instances.
+
+Client Tools:
+
+SQL Enterprise Manager: This was a tool in earlier versions of SQL Server (up to SQL Server 2000) for managing SQL Server instances, databases, and objects.
+
+SQL Query Analyzer: This tool (also from earlier versions, replaced by SQL Server Management Studio) was used for querying and analyzing SQL Server databases.
+
+Client Network Utility in SSMS: This is part of SQL Server Management Studio and helps manage client network configurations and protocols.
+
+
+
+	

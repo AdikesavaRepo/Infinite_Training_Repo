@@ -1,0 +1,12 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\CalculatorLibrary_Client.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\CalculatorLibrary_Client.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\CalculatorLibrary_Client.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\MyFirstLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\MyFirstLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\obj\Debug\CalculatorLibrary_Client.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\obj\Debug\CalculatorLibrary_Client.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\obj\Debug\CalculatorLibrary_Client.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\obj\Debug\CalculatorLibrary_Client.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\obj\Debug\CalculatorLibrary_Client.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\MySecondLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\MySecondLibrary.pdb

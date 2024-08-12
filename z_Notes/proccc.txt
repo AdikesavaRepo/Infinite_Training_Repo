@@ -1,0 +1,74 @@
+-- 6) Proc to book ticket with all messages
+create or alter procedure sp_BookingTrain_Ticket
+    @Train_No INT,
+    @Passenger_Name VARCHAR(50),
+    @Class_Name VARCHAR(50),
+    @Travel_Date DATETIME,
+    @Tickets_Count INT
+as
+begin
+------------ Calculate booking amount-------------------------
+declare @Ticket_Fare decimal(10, 2)
+declare @Total_Amount decimal(10, 2)
+
+select @Ticket_Fare = Fare from tblClassDetails
+where Train_No = @Train_No AND Class_Name = @Class_Name;
+set @Total_Amount = @Ticket_Fare * @Tickets_Count;
+
+------ Check if the train and class are available----------------------
+declare @Available_Seats int;
+select @Available_Seats = Available_Seats from tblClassDetails
+where Train_No = @Train_No AND Class_Name = @Class_Name;
+
+if @Available_Seats >= @Tickets_Count
+begin
+
+------ Check ticket count booking min 1 and max 3 -------------
+IF @Tickets_Count < 1 OR @Tickets_Count > 3
+    BEGIN
+        RAISERROR('Number of seats booked must be between 1 and 3.', 16, 1);
+        RETURN;
+    END;
+
+------- Check if booking date is greater than current date ---------
+	DECLARE @current_date DATETIME;
+    SET @current_date = GETDATE();
+    IF @Travel_Date <= @current_date
+    BEGIN
+        RAISERROR('Booking date must be greater than the current date.', 16, 1);
+        RETURN;
+    END;
+
+-------- Check Entered train and class exists or not ---------------
+IF NOT EXISTS (SELECT 1 FROM tblTrains WHERE Train_No = @Train_No)
+    BEGIN
+        RAISERROR('Train number does not exist.', 16, 1);
+        RETURN;
+    END;
+
+IF NOT EXISTS (SELECT 1 FROM tblClassDetails where Class_Name=@Class_Name)
+    BEGIN
+        RAISERROR('Class type does not exist for the specified train number.', 16, 1);
+        RETURN;
+    END;
+
+------------- Update available seats--------------------------------------------
+update tblClassDetails
+set Available_Seats = Available_Seats - @Tickets_Count
+where Train_No = @Train_No AND Class_Name = @Class_Name;
+------------ Insert booking details-----------------------------------------------
+insert into tblBookings(Train_No, Passenger_Name, Class_Name,Travel_Date ,Tickets_Count, Total_Amount, Status)
+values ( @Train_No, @Passenger_Name, @Class_Name, @Travel_Date, @Tickets_Count, @Total_Amount, 'Active');
+end
+end
+
+Select*from tblBookings
+
+
+----
+EXEC sp_BookingTrain_Ticket 
+    @Passenger_Name = 'Aadi',
+    @Train_No = 10001,
+    @Class_Name = '2AC',
+    @Travel_Date = '2025-09-29',
+    @Tickets_Count = 2

@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: CalculatorLibrary_Client, Configuration: Debug Any CPU ------
+1>  CalculatorLibrary_Client -> C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\CalculatorLibrary_Client\bin\Debug\CalculatorLibrary_Client.exe
+========== Build: 1 succeeded, 0 failed, 2 up-to-date, 0 skipped ==========

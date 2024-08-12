@@ -1,0 +1,6 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\bin\Debug\Testing.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\bin\Debug\Testing.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\bin\Debug\Testing.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\obj\Debug\Testing.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\obj\Debug\Testing.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Testing\Testing\obj\Debug\Testing.pdb

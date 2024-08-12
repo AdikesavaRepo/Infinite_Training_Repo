@@ -1,0 +1,207 @@
+CREATE OR ALTER PROCEDURE BookTrain_Ticket
+    @Train_No INT,
+    @Passenger_Name VARCHAR(50),
+    @Class_Name VARCHAR(50),
+    @Travel_Date DATETIME,
+    @Tickets_Count INT
+AS
+BEGIN
+    -- Start a transaction to ensure atomicity
+    BEGIN TRANSACTION;
+
+    DECLARE @Ticket_Fare DECIMAL(10, 2);
+    DECLARE @Total_Amount DECIMAL(10, 2);
+    DECLARE @Available_Seats INT;
+    DECLARE @ClassExists BIT;
+    DECLARE @TrainExists BIT;
+    DECLARE @CurrentDate DATETIME = GETDATE();
+
+    -- Validate the number of tickets
+    IF @Tickets_Count <= 0 OR @Tickets_Count > 3
+    BEGIN
+        PRINT 'Invalid number of tickets. You can only book up to 3 tickets at a time.';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Check if the class exists
+    SELECT @ClassExists = CASE WHEN EXISTS (
+        SELECT 1 
+        FROM tblClassDetails 
+        WHERE Train_No = @Train_No AND Class_Name = @Class_Name
+    ) THEN 1 ELSE 0 END;
+
+    IF @ClassExists = 0
+    BEGIN
+        PRINT 'Class does not exist';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Check if the train exists
+    SELECT @TrainExists = CASE WHEN EXISTS (
+        SELECT 1 
+        FROM tblTrains 
+        WHERE Train_No = @Train_No
+    ) THEN 1 ELSE 0 END;
+
+    IF @TrainExists = 0
+    BEGIN
+        PRINT 'Train does not exist';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Retrieve the ticket fare
+    SELECT @Ticket_Fare = Fare 
+    FROM tblClassDetails
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    -- Calculate total amount
+    SET @Total_Amount = @Ticket_Fare * @Tickets_Count;
+
+    -- Check available seats
+    SELECT @Available_Seats = Available_Seats 
+    FROM tblClassDetails
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    IF @Available_Seats < @Tickets_Count
+    BEGIN
+        PRINT 'Not enough seats available';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Only allow booking for future travel dates
+    IF @Travel_Date <= @CurrentDate
+    BEGIN
+        PRINT 'Travel date must be in the future';
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Update available seats
+    UPDATE tblClassDetails
+    SET Available_Seats = Available_Seats - @Tickets_Count
+    WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+    -- Insert booking details
+    INSERT INTO tblBookings (Train_No, Passenger_Name, Class_Name, Travel_Date, Tickets_Count, Total_Amount, Status)
+    VALUES (@Train_No, @Passenger_Name, @Class_Name, @Travel_Date, @Tickets_Count, @Total_Amount, 'Active');
+
+    -- Commit the transaction
+    COMMIT TRANSACTION;
+
+    PRINT 'Booking successfully completed.';
+END
+
+
+
+
+
+
+
+
+----------------------
+
+CREATE OR ALTER PROCEDURE BookTrain_Ticket
+    @Train_No INT,
+    @Passenger_Name VARCHAR(50),
+    @Class_Name VARCHAR(50),
+    @Travel_Date DATETIME,
+    @Tickets_Count INT,
+    @ErrorMessage NVARCHAR(MAX) OUTPUT
+AS
+BEGIN
+    -- Initialize the output error message
+    SET @ErrorMessage = '';
+
+    -- Start a transaction to ensure atomicity
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        DECLARE @Ticket_Fare DECIMAL(10, 2);
+        DECLARE @Total_Amount DECIMAL(10, 2);
+        DECLARE @Available_Seats INT;
+        DECLARE @CurrentDate DATETIME = GETDATE();
+
+        -- Validate the number of tickets
+        IF @Tickets_Count <= 0 OR @Tickets_Count > 3
+        BEGIN
+            SET @ErrorMessage = 'Invalid number of tickets. You can only book up to 3 tickets at a time.';
+            THROW 50000, @ErrorMessage, 1; -- Raise an error and exit the transaction
+        END
+
+        -- Check if the class exists
+        IF NOT EXISTS (
+            SELECT 1 
+            FROM tblClassDetails 
+            WHERE Train_No = @Train_No AND Class_Name = @Class_Name
+        )
+        BEGIN
+            SET @ErrorMessage = 'Class does not exist';
+            THROW 50001, @ErrorMessage, 1;
+        END
+
+        -- Check if the train exists
+        IF NOT EXISTS (
+            SELECT 1 
+            FROM tblTrains 
+            WHERE Train_No = @Train_No
+        )
+        BEGIN
+            SET @ErrorMessage = 'Train does not exist';
+            THROW 50002, @ErrorMessage, 1;
+        END
+
+        -- Retrieve the ticket fare
+        SELECT @Ticket_Fare = Fare 
+        FROM tblClassDetails
+        WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+        -- Calculate total amount
+        SET @Total_Amount = @Ticket_Fare * @Tickets_Count;
+
+        -- Check available seats
+        SELECT @Available_Seats = Available_Seats 
+        FROM tblClassDetails
+        WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+        IF @Available_Seats < @Tickets_Count
+        BEGIN
+            SET @ErrorMessage = 'Not enough seats available';
+            THROW 50003, @ErrorMessage, 1;
+        END
+
+        -- Only allow booking for future travel dates
+        IF @Travel_Date <= @CurrentDate
+        BEGIN
+            SET @ErrorMessage = 'Travel date must be in the future';
+            THROW 50004, @ErrorMessage, 1;
+        END
+
+        -- Update available seats
+        UPDATE tblClassDetails
+        SET Available_Seats = Available_Seats - @Tickets_Count
+        WHERE Train_No = @Train_No AND Class_Name = @Class_Name;
+
+        -- Insert booking details
+        INSERT INTO tblBookings (Train_No, Passenger_Name, Class_Name, Travel_Date, Tickets_Count, Total_Amount, Status)
+        VALUES (@Train_No, @Passenger_Name, @Class_Name, @Travel_Date, @Tickets_Count, @Total_Amount, 'Active');
+
+        -- Commit the transaction
+        COMMIT TRANSACTION;
+
+        SET @ErrorMessage = 'Booking successfully completed.';
+    END TRY
+    BEGIN CATCH
+        -- Rollback transaction if an error occurred
+        IF XACT_STATE() <> 0
+        BEGIN
+            ROLLBACK TRANSACTION;
+        END
+        
+        -- Capture and set the error message
+        SET @ErrorMessage = ERROR_MESSAGE();
+    END CATCH
+END

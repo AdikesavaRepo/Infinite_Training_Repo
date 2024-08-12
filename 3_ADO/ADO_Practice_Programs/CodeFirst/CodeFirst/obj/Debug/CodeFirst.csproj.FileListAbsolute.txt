@@ -1,0 +1,16 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\CodeFirst.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\EntityFramework.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\EntityFramework.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.CopyComplete
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.Migrations.InitialCreate.resources
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.Migrations.AddedAuthorsTable.resources
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\CodeFirst\CodeFirst\obj\Debug\CodeFirst.Migrations.adedforeign.resources

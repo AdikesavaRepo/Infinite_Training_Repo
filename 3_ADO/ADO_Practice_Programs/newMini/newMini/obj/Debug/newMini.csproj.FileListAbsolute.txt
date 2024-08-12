@@ -1,0 +1,12 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\newMini.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\newMini.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\newMini.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\EntityFramework.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\EntityFramework.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\obj\Debug\newMini.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\obj\Debug\newMini.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\obj\Debug\newMini.csproj.CopyComplete
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\obj\Debug\newMini.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\newMini\obj\Debug\newMini.pdb

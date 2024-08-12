@@ -1,0 +1,46 @@
+LINQ TO SQL via VS
+
+
+
+
+
+
+
+
+----------------------------------
+LINQ TO SQL via CommandPrompt (Tools>Command Line)
+cd c:/
+cd windows
+cd System32
+check sqlmetal
+
+c:\Windows\System32>sqlmetal.exe /server:ICS-LT-97LQ4D3\SQLEXPRESS /database:Northwind /dbml:C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\nwind.dbml /context:NorthwindContext /user:sa /password:Ramsusi@4567
+
+
+create a new Project Linq_To_SqlMetal,
+Right click to add Existing item
+Add wt u created
+show layout
+now
+goto app.config right side
+add 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<connectionStrings>
+		<add name="NwindConnstr"
+          	connectionString="Data Source = ICS-LT-97LQ4D3\\SQLEXPRESS;
+			 initial catalog = Northwind; user id= sa; password=Ramsusi@4567"
+          providerName="System.Data.SqlClient"/>
+	</connectionStrings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+</configuration>
+---------------------
+<configuration>
+  <connectionStrings>
+    <add name="MyConnectionString" connectionString="Data Source=ServerName;Initial Catalog=DatabaseName;Integrated Security=True;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+</configuration>
+build it

@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Abstract_Factory_Pattern, Configuration: Debug Any CPU ------
+1>  Abstract_Factory_Pattern -> C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Abstract_Factory_Pattern\Abstract_Factory_Pattern\bin\Debug\Abstract_Factory_Pattern.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

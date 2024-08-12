@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('#hide').click(function () {
+                $('p').hide();
+            })
+            $('#show').click(function () {
+                $('p').show();
+            })
+        });
+
+        //$('document').ready(function () {
+        //    $('#show').click(function () {
+        //        $('p').show();
+        //    })
+        //});
+    </script>
+</head>
+<body>
+    <p id="p1">If you click on the "Hide" button, p1 will disappear.</p>
+    <p id="p2">If you click on the "Hide" button, p2 will disappear.</p>
+    <p id="p3">If you click on the "Hide" button, p3 will disappear.</p>
+    <button id="hide">Hide me</button>
+    <button id="show">show me</button>
+    <button id="toggle">Hide/show</button>
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MyFirstLibrary\MyFirstLibrary\bin\Debug\MyFirstLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MyFirstLibrary\MyFirstLibrary\bin\Debug\MyFirstLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MyFirstLibrary\MyFirstLibrary\obj\Debug\MyFirstLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MyFirstLibrary\MyFirstLibrary\obj\Debug\MyFirstLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\MyFirstLibrary\MyFirstLibrary\obj\Debug\MyFirstLibrary.pdb

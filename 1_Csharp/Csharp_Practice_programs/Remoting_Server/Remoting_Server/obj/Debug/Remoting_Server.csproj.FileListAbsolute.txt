@@ -1,0 +1,6 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\bin\Debug\Remoting_Server.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\bin\Debug\Remoting_Server.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\obj\Debug\Remoting_Server.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\obj\Debug\Remoting_Server.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\obj\Debug\Remoting_Server.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\Remoting_Server\obj\Debug\Remoting_Server.pdb

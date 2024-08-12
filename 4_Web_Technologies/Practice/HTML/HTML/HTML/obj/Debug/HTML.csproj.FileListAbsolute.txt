@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\bin\Debug\HTML.exe.config
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\bin\Debug\HTML.exe
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\bin\Debug\HTML.pdb
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\obj\Debug\HTML.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\obj\Debug\HTML.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\obj\Debug\HTML.exe
+C:\Users\adikesavat\infinite\Web_Technologies\HTML\HTML\HTML\obj\Debug\HTML.pdb

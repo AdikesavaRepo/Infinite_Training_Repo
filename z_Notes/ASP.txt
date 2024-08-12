@@ -1,0 +1,20 @@
+connection
+
+ SqlConnection con = new SqlConnection("Data Source = ICS-LT-97LQ4D3\\SQLEXPRESS;"+"initial catalog = Northwind; user id = sa; password = Ramsusi@4567");
+
+--------------------------
+Trace : is like a debugger that traces all request and response activities of a page/es. In order to be able to trace we should enable the trace in web.config file as below
+
+<system.web>
+<trace enabled="true"/>
+</system.web>
+
+----------------------
+In the web.config file, make an entry as below to enable javascript libraries to execute validation functionalities
+
+<configuration>
+  <appSettings>
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="none"/>
+  </appSettings>
+------------------------
+

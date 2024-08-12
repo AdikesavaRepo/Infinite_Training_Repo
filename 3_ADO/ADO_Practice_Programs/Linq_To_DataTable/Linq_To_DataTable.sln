@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34931.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_To_DataTable", "Linq_To_DataTable\Linq_To_DataTable.csproj", "{BD5C39B4-CBF1-4C2B-9B50-83B9901F7600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5C39B4-CBF1-4C2B-9B50-83B9901F7600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5C39B4-CBF1-4C2B-9B50-83B9901F7600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5C39B4-CBF1-4C2B-9B50-83B9901F7600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5C39B4-CBF1-4C2B-9B50-83B9901F7600}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF4BF867-1494-40BD-BB15-F98DA3928BA5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\bin\Debug\CC1.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\bin\Debug\CC1.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\bin\Debug\CC1.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\obj\Debug\CC1.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\obj\Debug\CC1.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\obj\Debug\CC1.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Assessments\CC1\CC1\obj\Debug\CC1.pdb

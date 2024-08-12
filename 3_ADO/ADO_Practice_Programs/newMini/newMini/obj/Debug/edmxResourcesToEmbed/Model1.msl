@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MiniProjectPracticeModelStoreContainer" CdmEntityContainer="MiniProjectPracticeEntities">
+    <EntitySetMapping Name="tblBookings">
+      <EntityTypeMapping TypeName="MiniProjectPracticeModel.tblBooking">
+        <MappingFragment StoreEntitySet="tblBookings">
+          <ScalarProperty Name="Booking_ID" ColumnName="Booking_ID" />
+          <ScalarProperty Name="Passenger_Name" ColumnName="Passenger_Name" />
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Class_Name" ColumnName="Class_Name" />
+          <ScalarProperty Name="Travel_Date" ColumnName="Travel_Date" />
+          <ScalarProperty Name="Tickets_Count" ColumnName="Tickets_Count" />
+          <ScalarProperty Name="Total_Amount" ColumnName="Total_Amount" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCancellations">
+      <EntityTypeMapping TypeName="MiniProjectPracticeModel.tblCancellation">
+        <MappingFragment StoreEntitySet="tblCancellation">
+          <ScalarProperty Name="Cancellation_ID" ColumnName="Cancellation_ID" />
+          <ScalarProperty Name="Booking_ID" ColumnName="Booking_ID" />
+          <ScalarProperty Name="Passenger_Name" ColumnName="Passenger_Name" />
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Class_Name" ColumnName="Class_Name" />
+          <ScalarProperty Name="Tickets_Count" ColumnName="Tickets_Count" />
+          <ScalarProperty Name="DateOf_Cancel" ColumnName="DateOf_Cancel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClassDetails">
+      <EntityTypeMapping TypeName="MiniProjectPracticeModel.tblClassDetail">
+        <MappingFragment StoreEntitySet="tblClassDetails">
+          <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Class_Name" ColumnName="Class_Name" />
+          <ScalarProperty Name="Total_Seats" ColumnName="Total_Seats" />
+          <ScalarProperty Name="Available_Seats" ColumnName="Available_Seats" />
+          <ScalarProperty Name="Fare" ColumnName="Fare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTrains">
+      <EntityTypeMapping TypeName="MiniProjectPracticeModel.tblTrain">
+        <MappingFragment StoreEntitySet="tblTrains">
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Train_Name" ColumnName="Train_Name" />
+          <ScalarProperty Name="Source_Station" ColumnName="Source_Station" />
+          <ScalarProperty Name="Destination_Station" ColumnName="Destination_Station" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AddClass_Detail" FunctionName="MiniProjectPracticeModel.Store.sp_AddClass_Detail" />
+    <FunctionImportMapping FunctionImportName="sp_AddTrain" FunctionName="MiniProjectPracticeModel.Store.sp_AddTrain" />
+    <FunctionImportMapping FunctionImportName="sp_BookingTrain_Ticket" FunctionName="MiniProjectPracticeModel.Store.sp_BookingTrain_Ticket" />
+    <FunctionImportMapping FunctionImportName="sp_Cancel_Ticket" FunctionName="MiniProjectPracticeModel.Store.sp_Cancel_Ticket" />
+    <FunctionImportMapping FunctionImportName="sp_Display_Class" FunctionName="MiniProjectPracticeModel.Store.sp_Display_Class">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MiniProjectPracticeModel.sp_Display_Class_Result">
+          <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Class_Name" ColumnName="Class_Name" />
+          <ScalarProperty Name="Total_Seats" ColumnName="Total_Seats" />
+          <ScalarProperty Name="Available_Seats" ColumnName="Available_Seats" />
+          <ScalarProperty Name="Fare" ColumnName="Fare" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Display_Train" FunctionName="MiniProjectPracticeModel.Store.sp_Display_Train">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MiniProjectPracticeModel.sp_Display_Train_Result">
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Train_Name" ColumnName="Train_Name" />
+          <ScalarProperty Name="Source_Station" ColumnName="Source_Station" />
+          <ScalarProperty Name="Destination_Station" ColumnName="Destination_Station" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetAvailableTrains" FunctionName="MiniProjectPracticeModel.Store.sp_GetAvailableTrains">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MiniProjectPracticeModel.sp_GetAvailableTrains_Result">
+          <ScalarProperty Name="Train_No" ColumnName="Train_No" />
+          <ScalarProperty Name="Train_Name" ColumnName="Train_Name" />
+          <ScalarProperty Name="Source_Station" ColumnName="Source_Station" />
+          <ScalarProperty Name="Destination_Station" ColumnName="Destination_Station" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_TrainStatus" FunctionName="MiniProjectPracticeModel.Store.sp_TrainStatus" />
+  </EntityContainerMapping>
+</Mapping>

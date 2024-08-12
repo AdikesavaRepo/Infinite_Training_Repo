@@ -1,0 +1,6 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\bin\Debug\RomoteLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\bin\Debug\RomoteLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\obj\Debug\RomoteLibrary.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\obj\Debug\RomoteLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\obj\Debug\RomoteLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RomoteLibrary\obj\Debug\RomoteLibrary.pdb

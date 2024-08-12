@@ -1,0 +1,18 @@
+﻿﻿@model IEnumerable<MVC_EF_DB.Models.Category>
+
+@{
+    ViewBag.Title = "GetCategoryDetails";
+}
+
+<h2>GetCategoryDetails</h2>
+
+@foreach (var i in Model)
+{
+    <ul style="color:firebrick;">
+        <li>@i.CategoryID</li>
+        <li>@i.CategoryName</li>
+        <li>@i.Description</li>
+    </ul>
+}
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="505633d8e5ec4f298a9fe281e1902378" Name="Diagram1">
+        <EntityTypeShape EntityType="RailwayReservation_Booking_SystemModel.tblBooking" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RailwayReservation_Booking_SystemModel.tblCancellation" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RailwayReservation_Booking_SystemModel.tblClassDetail" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RailwayReservation_Booking_SystemModel.tblTrain" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="RailwayReservation_Booking_SystemModel.FK__tblBookin__Statu__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="RailwayReservation_Booking_SystemModel.FK__tblCancel__Booki__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="RailwayReservation_Booking_SystemModel.FK__tblCancel__Train__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="RailwayReservation_Booking_SystemModel.FK__tblClassDe__Fare__3A81B327" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,7 @@
+C:\Users\adikesavat\source\repos\DotNet\DotNet\obj\Debug\DotNet.csproj.AssemblyReference.cache
+C:\Users\adikesavat\source\repos\DotNet\DotNet\obj\Debug\DotNet.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\source\repos\DotNet\DotNet\bin\Debug\DotNet.exe.config
+C:\Users\adikesavat\source\repos\DotNet\DotNet\bin\Debug\DotNet.exe
+C:\Users\adikesavat\source\repos\DotNet\DotNet\bin\Debug\DotNet.pdb
+C:\Users\adikesavat\source\repos\DotNet\DotNet\obj\Debug\DotNet.exe
+C:\Users\adikesavat\source\repos\DotNet\DotNet\obj\Debug\DotNet.pdb

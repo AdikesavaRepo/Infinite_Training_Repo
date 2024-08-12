@@ -1,0 +1,10 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\bin\Debug\RemoteHost.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\bin\Debug\RemoteHost.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\bin\Debug\RemoteHost.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\bin\Debug\Remoting_Server.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\bin\Debug\Remoting_Server.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\obj\Debug\RemoteHost.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\obj\Debug\RemoteHost.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\obj\Debug\RemoteHost.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\obj\Debug\RemoteHost.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remoting_Server\RemoteHost\obj\Debug\RemoteHost.pdb

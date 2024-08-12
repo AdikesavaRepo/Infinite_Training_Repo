@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Button</title>
+</head>
+
+
+
+<body>
+    <button id="myBtn">Click me</button>
+    <p id="myMsg"></p>
+   
+    <script language="JavaScript">
+        const button = document.getElementById('myBtn');
+        const message = document.getElementById('myMsg');
+        button.addEventListener('click', function () {
+            console.log('Button clicked !!!!');
+            message.textContent = 'Button clicked !!!!';
+
+        });
+    </script>
+</body>
+
+
+</html>

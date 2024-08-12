@@ -1,0 +1,15 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\User_Console.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\User_Console.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\User_Console.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\EntityFramework.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\newMini.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\newMini.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\newMini.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\EntityFramework.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\obj\Debug\User_Console.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\obj\Debug\User_Console.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\obj\Debug\User_Console.csproj.CopyComplete
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\obj\Debug\User_Console.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\newMini\User_Console\obj\Debug\User_Console.pdb

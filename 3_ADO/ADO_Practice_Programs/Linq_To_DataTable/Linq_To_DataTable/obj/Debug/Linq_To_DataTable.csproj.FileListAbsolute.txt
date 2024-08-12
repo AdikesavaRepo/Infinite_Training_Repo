@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\bin\Debug\Linq_To_DataTable.exe.config
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\bin\Debug\Linq_To_DataTable.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\bin\Debug\Linq_To_DataTable.pdb
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\obj\Debug\Linq_To_DataTable.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\obj\Debug\Linq_To_DataTable.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\obj\Debug\Linq_To_DataTable.exe
+C:\Users\adikesavat\infinite\ADO\ADO_Practice_Programs\Linq_To_DataTable\Linq_To_DataTable\obj\Debug\Linq_To_DataTable.pdb

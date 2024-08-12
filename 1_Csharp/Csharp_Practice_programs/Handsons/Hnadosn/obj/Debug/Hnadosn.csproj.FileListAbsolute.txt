@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\bin\Debug\Hnadosn.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\bin\Debug\Hnadosn.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\bin\Debug\Hnadosn.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\obj\Debug\Hnadosn.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\obj\Debug\Hnadosn.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\obj\Debug\Hnadosn.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Hnadosn\Hnadosn\obj\Debug\Hnadosn.pdb

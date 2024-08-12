@@ -1,0 +1,10 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\bin\Debug\Remote_Console_Client.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\bin\Debug\Remote_Console_Client.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\bin\Debug\Remote_Console_Client.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\bin\Debug\Remoting_Server.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\bin\Debug\Remoting_Server.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\obj\Debug\Remote_Console_Client.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\obj\Debug\Remote_Console_Client.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\obj\Debug\Remote_Console_Client.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\obj\Debug\Remote_Console_Client.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\Remote_Console_Client\Remote_Console_Client\obj\Debug\Remote_Console_Client.pdb

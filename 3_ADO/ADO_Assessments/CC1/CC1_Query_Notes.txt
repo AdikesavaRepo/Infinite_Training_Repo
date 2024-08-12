@@ -1,0 +1,23 @@
+create database Employeemanagement
+use Employeemanagement
+
+create table Employee_Details
+(
+	Empno int Primary Key,
+	EmpName varchar(50) not null,
+	Empsal numeric(10,2) check(Empsal >=25000),
+	Emptype char(1) check(Emptype ='F' or Emptype ='P')
+)
+create or alter proc sp_insert_emp_details
+@Ename varchar(50), @Esal numeric(10,2), @Emptype char(1)
+as
+begin
+	declare @NEmpno int
+	select @NEmpno = isnull(max(Empno), 0) + 1 from Employee_Details
+	insert into Employee_Details(Empno,EmpName,Empsal,Emptype)
+	values (@NEmpno,@Ename,@Esal,@Emptype)
+end
+
+EXEC sp_helptext 'sp_insert_emp_details'
+select * from Employee_Details
+

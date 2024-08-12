@@ -1,0 +1,10 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\bin\Debug\RemoteMain.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\bin\Debug\RemoteMain.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\bin\Debug\RemoteMain.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\bin\Debug\RomoteLibrary.dll
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\bin\Debug\RomoteLibrary.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\obj\Debug\RemoteMain.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\obj\Debug\RemoteMain.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\obj\Debug\RemoteMain.csproj.CopyComplete
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\obj\Debug\RemoteMain.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\DotNet_Demos\RomoteLibrary\RemoteMain\obj\Debug\RemoteMain.pdb

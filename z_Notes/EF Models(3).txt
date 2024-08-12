@@ -1,0 +1,55 @@
+1. Data First Approach( Existing database) : Relations are simply mapped to classes as Models
+2. Code First Approach(New Database) : Classes gets mapped to relations using a technique called migrations
+3. Model First Approach (Create Models in design Mode, then we convert the models into classes, which are then mapped to relations)
+
+
+---------------------------------
+1. Data First Approach( Existing database) : Relations are simply mapped to classes as Models
+add ado
+select adoentity item first
+new connection
+server name etc
+
+
+
+
+
+2. Code First Approach(New Database) : Classes gets mapped to relations using migrations
+
+https://infics-my.sharepoint.com/:v:/r/personal/jayakumarj_infinite_com/Documents/Recordings/Dot%20Net%20with%20SQL%20Training_HTD%20Q2%2724-20240724_044403-Meeting%20Recording%201.mp4?csf=1&web=1&e=QnOk96&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiI0ZmVkMGY2ZS01NzBlLTRmNzgtOThjYi1mZWU2NGM2OWE5NWEifX0%3D
+
+codefirst from scratch
+
+entityframework 6.5.1
+add class
+add context class 
+
+-----configuration----
+<connectionStrings>
+		<add name="BooksConnection"
+			 connectionString="Data Source=ICS-LT-97LQ4D3\SQLEXPRESS; initial catalog=BookstoreDB;
+			 user id=sa; password=Ramsusi@4567;"
+			  providerName="System.Data.SqlClient"/>
+	</connectionStrings>
+
+------migration------
+tools-nuget-console
+enable-migrations
+add-migration "any name"
+update-database -v
+
+any changes in main
+add-migration " any name:
+update-database -v
+
+
+----3. Model First Approach
+ado.net entity data model
+seconf option 2empty ef 
+add entities (tables)
+add connection
+generate database
+execute
+write program
+
+

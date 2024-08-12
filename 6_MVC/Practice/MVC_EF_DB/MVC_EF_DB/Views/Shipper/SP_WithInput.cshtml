@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVC_EF_DB.Models.CustOrdersOrders_Result>
+@{
+    ViewBag.Title = "SP_WithInput";
+}
+
+<h2>SP_WithInput</h2>
+
+@foreach (var i in Model)
+{
+    <p>@i.OrderID</p>
+    <p>@i.OrderDate</p>
+    <p>@i.RequiredDate</p>
+    <p>@i.ShippedDate</p>
+}

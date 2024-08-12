@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\bin\Debug\sqlconnection1.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\bin\Debug\sqlconnection1.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\bin\Debug\sqlconnection1.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\obj\Debug\sqlconnection1.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\obj\Debug\sqlconnection1.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\obj\Debug\sqlconnection1.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Practice_programs\sqlconnection1\sqlconnection1\obj\Debug\sqlconnection1.pdb

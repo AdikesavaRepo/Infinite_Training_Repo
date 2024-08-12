@@ -1,0 +1,7 @@
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\bin\Debug\Code_Challenge_4.exe.config
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\bin\Debug\Code_Challenge_4.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\bin\Debug\Code_Challenge_4.pdb
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\obj\Debug\Code_Challenge_4.csproj.AssemblyReference.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\obj\Debug\Code_Challenge_4.csproj.CoreCompileInputs.cache
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\obj\Debug\Code_Challenge_4.exe
+C:\Users\adikesavat\infinite\Csharp\Csharp_Assessments\Assessment_4\Code_Challenge_4\Code_Challenge_4\obj\Debug\Code_Challenge_4.pdb
