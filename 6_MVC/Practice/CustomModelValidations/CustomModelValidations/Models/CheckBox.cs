@@ -7,5 +7,6 @@ namespace CustomModelValidations.Models
 {
     public class CheckBox
     {
+        public bool IsChecked { get; set; }
     }
 }
