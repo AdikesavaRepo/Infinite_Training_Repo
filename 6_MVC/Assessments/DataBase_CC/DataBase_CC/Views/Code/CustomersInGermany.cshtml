@@ -1,0 +1,57 @@
+﻿﻿@model IEnumerable<DataBase_CC.Models.Customer>
+@{
+    ViewBag.Title = "CustomersInGermany";
+}
+
+<h2>CustomersInGermany</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>all customers residing in Germany</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>German Customers</h2>
+    <table>
+        <tr>
+            <th>Customer ID</th>
+            <th>Company Name</th>
+            <th>Contact Name</th>
+            <th>Contact Title</th>
+            <th>City</th>
+            <th>Country</th>
+
+        </tr>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.CustomerID</td>
+                <td>@customer.CompanyName</td>
+                <td>@customer.ContactName</td>
+                <td>@customer.ContactTitle</td>
+                <th>@customer.City</th>
+                <td>@customer.Country</td>
+
+
+            </tr>
+        }
+    </table>
+</body>
+</html>
+
