@@ -98,10 +98,6 @@ namespace CodeFirst_CC.Controllers
         //display movie in given year
         
 
-        public ActionResult MovieYear(int year)
-        {
-            List<Movie> my = db.Movies.Where(mov => mov.DateOfRelease.Year == year).ToList();
-            return View(my);
-        }
+        
     }
 }
