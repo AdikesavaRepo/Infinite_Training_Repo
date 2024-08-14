@@ -95,7 +95,7 @@ namespace CodeFirst_CC.Controllers
             return View(mov);
         }
 
-        //display movie in given year
+        
         
 
         
