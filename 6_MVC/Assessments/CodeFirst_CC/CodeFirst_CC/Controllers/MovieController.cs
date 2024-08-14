@@ -11,23 +11,23 @@ namespace CodeFirst_CC.Controllers
 {
     public class MovieController : Controller
     {
-        IRepository<Movie> _movrepo = null;
+        IRepository<Movie> movrepo = null;
         ContextClass db = new ContextClass();
         
 
         public MovieController()
         {
-            _movrepo = new Repository<Movie>();
+            movrepo = new Repository<Movie>();
         }
 
         // GET: Movie
         public ActionResult Index()
         {
-            var mov = _movrepo.GetAll();
+            var mov = movrepo.GetAll();
             return View(mov);
         }
 
-        //2. create
+        //2. create movie 
         [HttpGet]
         public ActionResult Create()
         {
@@ -39,18 +39,18 @@ namespace CodeFirst_CC.Controllers
         {
             if (ModelState.IsValid)
             {
-                _movrepo.Insert(m);
-                _movrepo.Save();
+                movrepo.Insert(m);
+                movrepo.Save();
                 return RedirectToAction("Index");
             }
             return View(m);
         }
 
-       
+       // editing movie details
         [HttpGet]
         public ActionResult Edit(int Id)
         {
-            var mov = _movrepo.GetById(Id);
+            var mov = movrepo.GetById(Id);
             return View();
         }
 
@@ -59,8 +59,8 @@ namespace CodeFirst_CC.Controllers
         {
             if (ModelState.IsValid)
             {
-                _movrepo.Update(m);
-                _movrepo.Save();
+                movrepo.Update(m);
+                movrepo.Save();
                 return RedirectToAction("Index");
             }
             else
@@ -73,7 +73,7 @@ namespace CodeFirst_CC.Controllers
         [HttpGet]
         public ActionResult Delete(int Id)
         {
-            var mov = _movrepo.GetById(Id);
+            var mov = movrepo.GetById(Id);
             return View(mov);
         }
 
@@ -81,9 +81,9 @@ namespace CodeFirst_CC.Controllers
         [ActionName("Delete")]
         public ActionResult DeletePost(int Id)
         {
-            var mov = _movrepo.GetById(Id);
-            _movrepo.Delete(Id);
-            _movrepo.Save();
+            var mov = movrepo.GetById(Id);
+            movrepo.Delete(Id);
+            movrepo.Save();
             return RedirectToAction("Index");
         }
 
@@ -91,13 +91,23 @@ namespace CodeFirst_CC.Controllers
 
         public ActionResult Details(int Id)
         {
-            var mov = _movrepo.GetById(Id);
+            var mov = movrepo.GetById(Id);
             return View(mov);
         }
 
-        
-        
 
-        
+        public ActionResult ReleasedInYear(int year)
+        {
+            List<Movie> moviesInYear = db.Movies.Where(m => m.DateOfRelease.Year == year).ToList();
+            return View(moviesInYear);
+        }
+
+
+
+
+
+
+
+
     }
 }
