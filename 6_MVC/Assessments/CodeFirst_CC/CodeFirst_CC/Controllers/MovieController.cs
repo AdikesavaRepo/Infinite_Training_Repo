@@ -46,7 +46,7 @@ namespace CodeFirst_CC.Controllers
             return View(m);
         }
 
-        //3. Edit a product
+       
         [HttpGet]
         public ActionResult Edit(int Id)
         {
@@ -69,7 +69,7 @@ namespace CodeFirst_CC.Controllers
             }
         }
 
-        //4. deleteing a given product
+       
         [HttpGet]
         public ActionResult Delete(int Id)
         {
@@ -87,7 +87,7 @@ namespace CodeFirst_CC.Controllers
             return RedirectToAction("Index");
         }
 
-        //5. details of a given product
+      
 
         public ActionResult Details(int Id)
         {
