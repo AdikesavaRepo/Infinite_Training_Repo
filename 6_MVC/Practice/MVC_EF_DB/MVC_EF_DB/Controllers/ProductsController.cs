@@ -37,7 +37,7 @@ namespace MVC_EF_DB.Controllers
                 db.SaveChanges();
                 return RedirectToAction("index");
             }
-            //for the category and supplier dropdown
+            
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "CategoryName", product.CategoryID);
             ViewBag.SupplierID = new SelectList(db.Suppliers, "SupplierID", "CompanyName", product.SupplierID);
             return View(product);
