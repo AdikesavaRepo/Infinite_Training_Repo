@@ -8,7 +8,7 @@ namespace CustomModelValidations.Controllers
 {
     public class JobApplicationController : Controller
     {
-        // GET: JobApplication
+       
         public ActionResult Index()
         {
             return View();
